@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Filter;
-use App\Livewire\TdList;
+//use App\Livewire\TdList;
 
-use App\Livewire\CreatePost;
+use App\Livewire\Postfilter;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/home', [Filter::class, 'render']);
+Route::get('/home', [Postfilter::class, 'render']);
 
 
 Route::get('/hello', [CreatePost::class, 'render'] );

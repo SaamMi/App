@@ -4,7 +4,7 @@ namespace App\Livewire;
  
 use Livewire\Component;
  
-class TodoList extends Component
+class TdList extends Component
 {
     public $todos = [];
  
@@ -17,5 +17,8 @@ class TodoList extends Component
         $this->todo = '';
     }
  
-    // ...
+    public function render()
+    {
+        return view('livewire.todo-list');
+    }
 }
